@@ -34,11 +34,11 @@ export default function AllProducts() {
                             allProduct.map((items, index) => {
                                 return (
                                     <div key={index} className=' shadow-[0_0_10px_2px_rgba(0,0,0,0.3)] overflow-hidden rounded-md hover:scale-[1.05] duration-[0.5s]'>
-                                        <Link href={`/products/${items.title.split(' ').join('-')}`}><img src={items.thumbnail} /></Link>
+                                        <Link href={`/products/${items.id}`}><img src={items.thumbnail} /></Link>
                                         <div className=' p-3 flex justify-between'>
                                             <div className=''>
                                                 <h3 className=' text-gray-400'>{items.category}</h3>
-                                                <Link href={`/products/${items.title.split(' ').join('-')}`}><h2>{items.title}</h2></Link>
+                                                <Link href={`/products/${items.id}`}><h2>{items.title}</h2></Link>
                                             </div>
                                             <div>{items.warrantyInformation}</div>
                                         </div>
