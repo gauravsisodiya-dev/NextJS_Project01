@@ -1,11 +1,10 @@
-
 import AllProducts from '@/components/AllProducts'
 import React from 'react'
 
-export default function Home() {
+export default function products() {
   return (
-    <>
-      <AllProducts/>
-    </>
+    <div>
+        <AllProducts/>
+    </div>
   )
 }
